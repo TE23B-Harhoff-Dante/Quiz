@@ -42,7 +42,7 @@ if (choice1.ToLower() == "a")
     Console.WriteLine("CORRECT");
 
 }
-else if (choice1.ToLower() == "c")
+else if (choice1.ToLower() == "c" || choice1.ToLower() == "danmark")
 {
     Console.WriteLine("ÄR DU GALEN????");
 }
@@ -50,13 +50,30 @@ else if (choice1.ToLower() == "c")
 else
 {
 
-    Console.Write("WRONG");
+    Console.Write("WRONG\n");
 }
 
 Console.WriteLine("Vilket är det största djuret i världen?\n");
 Console.WriteLine("A) blåvalen B) mus C) myra");
 
 choice2 = Console.ReadLine();
+
+if (choice2.ToLower() == "a") {
+
+    score++;
+    Console.WriteLine("CORRECT");
+    Console.WriteLine($"Du fick {score} poäng");
+
+}
+else {
+
+    Console.WriteLine("WRONG");
+    Console.WriteLine($"Du fick {score} poäng");
+}
+
+Console.ReadLine();
+
+
 
 
 
